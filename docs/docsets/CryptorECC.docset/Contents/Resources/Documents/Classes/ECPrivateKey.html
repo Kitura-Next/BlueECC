@@ -4,74 +4,100 @@
     <title>ECPrivateKey Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
+
     <a name="//apple_ref/swift/Class/ECPrivateKey" class="dashAnchor"></a>
+
     <a title="ECPrivateKey Class Reference"></a>
-    <header>
-      <div class="content-wrapper">
-        <p><a href="../index.html">CryptorECC Docs</a> (100% documented)</p>
-      </div>
-    </header>
-    <div class="content-wrapper">
-      <p id="breadcrumbs">
-        <a href="../index.html">CryptorECC Reference</a>
-        <img id="carat" src="../img/carat.png" />
-        ECPrivateKey Class Reference
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          CryptorECC 1.2.5 Docs
+        </a>
+         (100% documented)
       </p>
-    </div>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/Kitura-Next/BlueECC/">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">CryptorECC Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      ECPrivateKey Class Reference
+    </p>
+
     <div class="content-wrapper">
-      <nav class="sidebar">
+      <nav class="navigation">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="../Classes.html">Classes</a>
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/ECPrivateKey.html">ECPrivateKey</a>
+                <a class="nav-group-task-link" href="../Classes/ECPrivateKey.html">ECPrivateKey</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/ECPublicKey.html">ECPublicKey</a>
+                <a class="nav-group-task-link" href="../Classes/ECPublicKey.html">ECPublicKey</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Extensions.html">Extensions</a>
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Extensions/Data.html">Data</a>
+                <a class="nav-group-task-link" href="../Extensions/Data.html">Data</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Extensions/String.html">String</a>
+                <a class="nav-group-task-link" href="../Extensions/String.html">String</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="../Structs.html">Structures</a>
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/ECError.html">ECError</a>
+                <a class="nav-group-task-link" href="../Structs/ECError.html">ECError</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/ECSignature.html">ECSignature</a>
+                <a class="nav-group-task-link" href="../Structs/ECSignature.html">ECSignature</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/EllipticCurve.html">EllipticCurve</a>
+                <a class="nav-group-task-link" href="../Structs/EllipticCurve.html">EllipticCurve</a>
               </li>
             </ul>
           </li>
         </ul>
       </nav>
       <article class="main-content">
-        <section>
-          <section class="section">
+
+        <section class="section">
+          <div class="section-content top-matter">
             <h1>ECPrivateKey</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ECPrivateKey</span></code></pre>
+                  
+                  <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="kt">OSX</span> <span class="mf">10.13</span><span class="p">,</span> <span class="n">iOS</span> <span class="mi">11</span><span class="p">,</span> <span class="n">watchOS</span> <span class="mf">4.0</span><span class="p">,</span> <span class="n">tvOS</span> <span class="mf">11.0</span><span class="p">,</span> <span class="o">*</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">ECPrivateKey</span></code></pre>
 
                 </div>
               </div>
@@ -97,10 +123,13 @@ KVmLgSSq2asqiwdrU5YHbcHFkgdABM1SPA==
 <span class="k">let</span> <span class="nv">signature</span> <span class="o">=</span> <span class="s">"Hello world"</span><span class="o">.</span><span class="nf">sign</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span> <span class="n">privateKey</span><span class="p">)</span>
 </code></pre>
 
-          </section>
-          <section class="section task-group-section">
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
             <div class="task-group">
-              <ul>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -187,7 +216,7 @@ KVmLgSSq2asqiwdrU5YHbcHFkgdABM1SPA==
                     <code>
                     <a name="/s:10CryptorECC12ECPrivateKeyC3keyACSS_tKcfc"></a>
                     <a name="//apple_ref/swift/Method/init(key:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10CryptorECC12ECPrivateKeyC3keyACSS_tKcfc">init(key:)</a>
+                    <a class="token" href="#/s:10CryptorECC12ECPrivateKeyC3keyACSS_tKcfc">init(key:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -196,8 +225,8 @@ KVmLgSSq2asqiwdrU5YHbcHFkgdABM1SPA==
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Initialize an ECPrivateKey from a PEM String.
-This can either be from a <code>.p8</code> file with the header <q>&mdash;&ndash;BEGIN PRIVATE KEY&mdash;&ndash;</q>,
-or from a <code>.pem</code> file with the header <q>&mdash;&ndash;BEGIN EC PRIVATE KEY&mdash;&ndash;</q>.</p>
+This can either be from a <code>.p8</code> file with the header &ldquo;&mdash;&ndash;BEGIN PRIVATE KEY&mdash;&ndash;&rdquo;,
+or from a <code>.pem</code> file with the header &ldquo;&mdash;&ndash;BEGIN EC PRIVATE KEY&mdash;&ndash;&rdquo;.</p>
 <h3 id='usage-example' class='heading'>Usage Example:</h3>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">privateKeyString</span> <span class="o">=</span> <span class="s">"""
 -----BEGIN EC PRIVATE KEY-----
@@ -219,7 +248,7 @@ KVmLgSSq2asqiwdrU5YHbcHFkgdABM1SPA==
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="n">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -254,7 +283,7 @@ KVmLgSSq2asqiwdrU5YHbcHFkgdABM1SPA==
                     <code>
                     <a name="/s:10CryptorECC12ECPrivateKeyC8pkcs8DERAC10Foundation4DataV_tKcfc"></a>
                     <a name="//apple_ref/swift/Method/init(pkcs8DER:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10CryptorECC12ECPrivateKeyC8pkcs8DERAC10Foundation4DataV_tKcfc">init(pkcs8DER:)</a>
+                    <a class="token" href="#/s:10CryptorECC12ECPrivateKeyC8pkcs8DERAC10Foundation4DataV_tKcfc">init(pkcs8DER:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -263,7 +292,7 @@ KVmLgSSq2asqiwdrU5YHbcHFkgdABM1SPA==
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Initialize an ECPrivateKey from a PKCS8 <code>.der</code> file data.<br>
-This is equivalent to a PEM String that has had the <q>&mdash;&ndash;BEGIN PRIVATE KEY&mdash;&ndash;</q>
+This is equivalent to a PEM String that has had the &ldquo;&mdash;&ndash;BEGIN PRIVATE KEY&mdash;&ndash;&rdquo;
 header and footer stripped and been base64 encoded to ASN1 Data.</p>
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
@@ -311,7 +340,7 @@ header and footer stripped and been base64 encoded to ASN1 Data.</p>
                     <code>
                     <a name="/s:10CryptorECC12ECPrivateKeyC7sec1DERAC10Foundation4DataV_tKcfc"></a>
                     <a name="//apple_ref/swift/Method/init(sec1DER:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10CryptorECC12ECPrivateKeyC7sec1DERAC10Foundation4DataV_tKcfc">init(sec1DER:)</a>
+                    <a class="token" href="#/s:10CryptorECC12ECPrivateKeyC7sec1DERAC10Foundation4DataV_tKcfc">init(sec1DER:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -320,7 +349,7 @@ header and footer stripped and been base64 encoded to ASN1 Data.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Initialize an ECPrivateKey from a SEC1 <code>.der</code> file data.<br>
-This is equivalent to a PEM String that has had the <q>&mdash;&ndash;BEGIN EC PRIVATE KEY&mdash;&ndash;</q>
+This is equivalent to a PEM String that has had the &ldquo;&mdash;&ndash;BEGIN EC PRIVATE KEY&mdash;&ndash;&rdquo;
 header and footer stripped and been base64 encoded to ASN1 Data.</p>
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
@@ -404,7 +433,7 @@ header and footer stripped and been base64 encoded to ASN1 Data.</p>
                     <code>
                     <a name="/s:10CryptorECC12ECPrivateKeyC4make3forAcA13EllipticCurveV_tKFZ"></a>
                     <a name="//apple_ref/swift/Method/make(for:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10CryptorECC12ECPrivateKeyC4make3forAcA13EllipticCurveV_tKFZ">make(for:)</a>
+                    <a class="token" href="#/s:10CryptorECC12ECPrivateKeyC4make3forAcA13EllipticCurveV_tKFZ">make(for:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -437,14 +466,15 @@ header and footer stripped and been base64 encoded to ASN1 Data.</p>
                 </li>
               </ul>
             </div>
-          </section>
+          </div>
         </section>
-        <section id="footer">
-          <p>&copy; 2019 <a class="link" href="https://github.com/Kitura-Next/BlueECC" target="_blank" rel="external">IBM</a>. All rights reserved. (Last updated: 2019-03-12)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
-        </section>
+
       </article>
     </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://github.com/Kitura-Next/BlueECC" target="_blank" rel="external">IBM</a>. All rights reserved. (Last updated: 2020-11-28)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
   </body>
 </div>
 </html>

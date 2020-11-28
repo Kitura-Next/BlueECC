@@ -4,69 +4,93 @@
     <title>CryptorECC  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
+
+
     <a title="CryptorECC  Reference"></a>
-    <header>
-      <div class="content-wrapper">
-        <p><a href="index.html">CryptorECC Docs</a> (100% documented)</p>
-      </div>
-    </header>
-    <div class="content-wrapper">
-      <p id="breadcrumbs">
-        <a href="index.html">CryptorECC Reference</a>
-        <img id="carat" src="img/carat.png" />
-        CryptorECC  Reference
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          CryptorECC 1.2.5 Docs
+        </a>
+         (100% documented)
       </p>
-    </div>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/Kitura-Next/BlueECC/">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">CryptorECC Reference</a>
+      <img class="carat" src="img/carat.png" />
+      CryptorECC  Reference
+    </p>
+
     <div class="content-wrapper">
-      <nav class="sidebar">
+      <nav class="navigation">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="Classes.html">Classes</a>
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/ECPrivateKey.html">ECPrivateKey</a>
+                <a class="nav-group-task-link" href="Classes/ECPrivateKey.html">ECPrivateKey</a>
               </li>
               <li class="nav-group-task">
-                <a href="Classes/ECPublicKey.html">ECPublicKey</a>
+                <a class="nav-group-task-link" href="Classes/ECPublicKey.html">ECPublicKey</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Extensions.html">Extensions</a>
+            <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Extensions/Data.html">Data</a>
+                <a class="nav-group-task-link" href="Extensions/Data.html">Data</a>
               </li>
               <li class="nav-group-task">
-                <a href="Extensions/String.html">String</a>
+                <a class="nav-group-task-link" href="Extensions/String.html">String</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Structs.html">Structures</a>
+            <a class="nav-group-name-link" href="Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Structs/ECError.html">ECError</a>
+                <a class="nav-group-task-link" href="Structs/ECError.html">ECError</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/ECSignature.html">ECSignature</a>
+                <a class="nav-group-task-link" href="Structs/ECSignature.html">ECSignature</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/EllipticCurve.html">EllipticCurve</a>
+                <a class="nav-group-task-link" href="Structs/EllipticCurve.html">EllipticCurve</a>
               </li>
             </ul>
           </li>
         </ul>
       </nav>
       <article class="main-content">
-        <section>
-          <section class="section">
+
+        <section class="section">
+          <div class="section-content top-matter">
             
             <p align="center">
     <a href="http://kituranext.org/">
@@ -243,14 +267,16 @@ The following describes the encryption process:</p>
 
 <p>This library is licensed under Apache 2.0. Full license text is available in <a href="https://github.com/Kitura-Next/BlueECC/blob/master/LICENSE.txt">LICENSE</a>.</p>
 
-          </section>
+          </div>
         </section>
-        <section id="footer">
-          <p>&copy; 2019 <a class="link" href="https://github.com/Kitura-Next/BlueECC" target="_blank" rel="external">IBM</a>. All rights reserved. (Last updated: 2019-03-12)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
-        </section>
+
+
       </article>
     </div>
+    <section class="footer">
+      <p>&copy; 2020 <a class="link" href="https://github.com/Kitura-Next/BlueECC" target="_blank" rel="external">IBM</a>. All rights reserved. (Last updated: 2020-11-28)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
   </body>
 </div>
 </html>

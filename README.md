@@ -6,18 +6,15 @@
 
 
 <p align="center">
-    <a href="https://kitura-next.github.io/BlueECC/index.html">
-    <img src="https://img.shields.io/badge/apidoc-BlueECC-1FBCE4.svg?style=flat" alt="APIDoc">
-    </a>
-    <a href="https://travis-ci.org/Kitura-Next/BlueECC">
-    <img src="https://travis-ci.org/Kitura-Next/BlueECC.svg?branch=master" alt="Build Status - Master">
-    </a>
-    <img src="https://img.shields.io/badge/os-macOS-green.svg?style=flat" alt="macOS">
-    <img src="https://img.shields.io/badge/os-linux-green.svg?style=flat" alt="Linux">
+    <a href="https://www.kituranext.org/learn/">
+    <img src="https://img.shields.io/badge/docs-kitura-1FBCE4.svg" alt="APIDoc"></a>
+    <a href="https://github.com/Kitura-Next/BlueECC/actions?query=workflow%3ASwift+MacOS">
+    <img src="https://github.com/Kitura-Next/BlueECC/workflows/Swift%20MacOS/badge.svg"></a>
+    <a href="https://github.com/Kitura-Next/BlueECC/actions?query=workflow%3ASwift+Ubuntu">
+    <img src="https://github.com/Kitura-Next/BlueECC/workflows/Swift%20Ubuntu/badge.svg"></a>
     <img src="https://img.shields.io/badge/license-Apache2-blue.svg?style=flat" alt="Apache 2">
     <a href="http://swift-at-ibm-slack.mybluemix.net/">
-    <img src="http://swift-at-ibm-slack.mybluemix.net/badge.svg" alt="Slack Status">
-    </a>
+    <img src="http://swift-at-ibm-slack.mybluemix.net/badge.svg" alt="Slack Status"></a>
 </p>
 
 # BlueECC
@@ -26,7 +23,7 @@ A cross platform Swift implementation of Elliptic Curve Digital Signature Algori
 
 ## Swift version
 
-The latest version of BlueECC requires **Swift 4.1** or later. You can download this version of the Swift binaries by following this [link](https://swift.org/download/). Compatibility with other Swift versions is not guaranteed.
+Requires **Swift 5.1** or newer. You can download this version of the Swift binaries by following this [link](https://swift.org/download/). Compatibility with other Swift versions is not guaranteed.
 
 ## Usage
 
